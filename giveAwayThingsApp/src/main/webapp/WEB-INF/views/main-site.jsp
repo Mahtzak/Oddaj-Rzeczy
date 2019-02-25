@@ -13,7 +13,7 @@
 </head>
 <body>
     <sec:authorize access="isAuthenticated()">
-        Zalogowano
+        Zalogowano ${sessionScope.user.username}
     </sec:authorize>
     <div>
         <a href="/login">Zaloguj się</a>
